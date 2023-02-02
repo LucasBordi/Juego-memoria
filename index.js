@@ -367,11 +367,10 @@ function seleccionarTarjeta(i) {
 }
 
 //modo oscuro
-//https://www.youtube.com/watch?v=3V8E57ChrKM
 const boton = document.getElementById('boton-oscuro');
 const configUser = window.matchMedia('(prefers-color-scheme: tema-oscuro)');
 const localConfig = localStorage.getItem("tema");
-/*
+
 if (localConfig === 'tema-oscuro') {
     document.body.classList.toggle('tema-oscuro');
     boton.textContent = "Modo Claro";
@@ -379,7 +378,7 @@ if (localConfig === 'tema-oscuro') {
     document.body.classList.toggle('tema-claro');
     boton.textContent = "Modo Oscuro"
 }
-*/
+
 boton.addEventListener('click', () => {
     let colorTema;
     if (configUser.matches) {
