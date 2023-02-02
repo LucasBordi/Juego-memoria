@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="./iccon/style.css" />
+  <title>Juego de memoria</title>
+</head>
+
+<body class="tema-claro">
+  <div id="contenedor">
+    <div id="cabeza">
+      <h1 id="titulo">Juego de Memoria</h1>
+      <div>
+        <button onclick="cronometro()" id="ocultar" class="ocultar caja-tiempo">Tiempo</button>
+        <button id="boton-oscuro" class="juego icon-brightness-contrast">Modo Oscuro</button>
+        <div id="cronometro"></div>
+      </div>
+      <div id="info"></div>
+    </div>
+    <div id="tablero"></div>
+  </div>
+  <button onclick="reiniciarJuego()" class="juego">Reiniciar Juego</button>
+  <script src="index.js"></script>
+</body>
+<footer id="footer">Creado por Lucas Bordon 2022</footer>
+
+</html>
